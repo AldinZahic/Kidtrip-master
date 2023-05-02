@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/Permanent_Marker/PermanentMarker-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+body {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas:
+    "filter searchBtn"
+    "showInfo filterMap"
+    "footer footer"
+}
+
+html, body, nav, header, main, footer, div {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'MyFont', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(54, 157, 188);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#searchBtn {
+    grid-area: searchBtn;
+    height: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav li {
+    margin: 20px;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'MyFont';
+}
+
+#filter {
+    grid-area: filter;
+}
+
+#filterMap {
+    width: 600px;
+    height: 100%;
+    border: 3px solid rgb(0, 0, 0);
+    display: none;
+    grid-area: filterMap;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+}
+
+#infoDiv {
+    border: solid black 5px;
+    width: 600px;
+}
+
+#infoDiv p,
+h3 {
+    color: black;
+    text-align: center;
+}
+
+#infoDiv:hover {
+    border: solid red 5px;
+}
+
+#showInfo {
+    grid-area:showInfo;
+    overflow-y: scroll;
+}
+
+input[type="radio"] {
+    display:inline;
+}
+
+input[type="radio"]:checked + label img {
+    content: url(/IMG/PICKED.png);
+}
+
+label img {
+    content: url(/IMG/UNPICKED.png);
+    width:40px;
+}
+
+#footer{
+    grid-area: footer;
+}

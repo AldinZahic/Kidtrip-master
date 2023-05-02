@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/Permanent_Marker/PermanentMarker-Regular.ttf);     
+    font-weight: normal;
+    font-style: normal;
+  }
+  

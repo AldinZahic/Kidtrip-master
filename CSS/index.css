@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/Permanent_Marker/PermanentMarker-Regular.ttf);     
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+html, body {
+    height: 100%;
+    
+}
+
+body {
+    display:grid;
+    
+}
+
+html, body, nav, header, main, footer, div {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'MyFont', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+nav {
+    background-color: rgb(54, 157, 188);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    margin: 20px;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family: 'MyFont';
+}
+
+
+
+#imageViewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(139, 129, 129);
+    width: 700px;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+
+
+#imgViewH3 {
+font-size: xx-large;
+margin: 10px;
+padding: 0px;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+    margin: auto; 
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+

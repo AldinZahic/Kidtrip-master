@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidtrip</title>
+    <link rel="stylesheet" href="CSS/filter.css">
+    <script src="Javascript/scriptFilter.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbO2rkd_VQgNT3BGnbmTPoEDS7oE_Viqk"></script> 
+    <!--API-key=AIzaSyAbO2rkd_VQgNT3BGnbmTPoEDS7oE_Viqk-->
+
+</head>
+
+<body>
+    <form id="filter">
+        <fieldset id="distance">
+            <legend>Hur många kilometer vill du färdas?</legend>
+            <input type="range" id="amountKm" name="KM" min="0" max="300" step="10" value="100">
+            <p id="rangeValue"></p>
+        </fieldset>
+        
+    <fieldset id="price">
+        <legend>Hur mycket vill du betala i inträde per person?</legend>
+        <label>
+            <input type="radio" name="prices" value="100" id="radio1" required checked>100:-
+            <label for="radio1"><img src="/IMG/UNPICKED.png"></label>
+        </label>
+        <label>
+            <input type="radio" name="prices" value="200" id="radio1" required>200:-
+            <label for="radio2"><img src="/IMG/UNPICKED.png"></label>
+        </label>
+        <label>
+            <input type="radio" name="prices" value="300" id="radio1" required>300:-
+            <label for="radio3"><img src="/IMG/UNPICKED.png"></label>
+        </label>
+        <label>
+            <input type="radio" name="prices" value="400" id="radio1" required>400:-
+            <label for="radio4"><img src="/IMG/UNPICKED.png"></label>
+        </label>
+        <label>
+            <input type="radio" name="prices" value="500"  id="radio1"required>500:-
+            <label for="radio5"><img src="/IMG/UNPICKED.png"></label>
+        </label>
+        <p id="priceValue"></p>
+
+    </fieldset>
+    </form>
+    <button id="searchBtn">Sök</button>
+
+    <div id="showInfo"></div>
+    <div id="filterMap"></div>
+
+
+    <nav id="footer">
+        <ul>
+            <li><a href="/index.html">Hem</a></li>
+            <li><a href="/filter.html">Sök</a></li>
+            <li><a href="/Info.html">Info</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
